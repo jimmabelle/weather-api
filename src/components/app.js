@@ -4,6 +4,8 @@ import Titles from "./titles/Titles"
 import Form from "./form/Form"
 import Weather from "./weather/Weather"
 
+import "./app.css"
+
 const API_KEY = "ada31c4dd9505b9deb20760e90c6552a"
 
 class App extends React.Component {

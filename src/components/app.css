@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Tajawal');
+
+body {
+  background: linear-gradient(90deg, #CCA6B4, #B58590 25%, #CCA6B4 50%, #403440 100%);
+  font-family:'Tajawal', sans-serif;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 5% auto;
+}
+
+.main {
+  flex-grow:1;
+  background-color:#f2f2f2;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  align-items: center;
+}
+
+.left, .right {
+  flex-grow:1;
+  width: 450px;
+  height: 60vh;
+  background-color: #403440;
+  font-size: 1em;
+}
+
+.left {
+  background-image: url(https://images.pexels.com/photos/268941/pexels-photo-268941.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #F0C4E7;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+input[type="text"] {
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 1px #F0C4E7;
+  width: 30%;
+  padding-bottom: 4px;
+  color: #fff;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+/* removed autocomplete field yellow background */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px #403440 inset;
+  -webkit-text-fill-color: #fff !important;
+}
+
+button {
+  border: none;
+  padding: 6px 20px;
+  margin: 0 2px;
+  border-radius: 2px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #7B5B6C;
+  color: #fff;
+  font-weight: 100;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+.weatherForm,
+.weatherInfo {
+  padding-top: 20px;
+}
+
+.weatherInfo {
+  width: 80%;
+  font-size: 15px;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.weatherKey {
+  color: #F0C4E7;
+  border-bottom: solid 2px rgba(255,255,255,0.06);
+  padding: 10px 0 10px 0;
+  font-weight: 200;
+}
+
+.weatherKey:last-child {
+  border: 0;
+}
+
+.weatherValue {
+  color: #fff;
+  font-weight: 200;
+}
+
+.weatherError {
+  color: #F0C4E7;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+
+
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .wrapper {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    width: 100%;
+    margin: 0;
+  }
+}
